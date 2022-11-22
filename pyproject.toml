@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pennylane-codecamp-2022"
+version = "0.1.0"
+description = "Pennylane CodeCamp Challenge 2022"
+authors = ["Anton Petrov <xxx@xxx.com>"]
+readme = "README.md"
+packages = [{ include = "pennylane_codecamp_2022" }]
+
+[tool.poetry.dependencies]
+python = "~3.9.15"
+numpy = "1.23.4"
+pandas = "1.5.1"
+scipy = "1.9.3"
+pennylane = "0.26.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+flake8 = "^5.0.4"
+ipykernel = "^6.17.1"
+ipython = "^8.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
